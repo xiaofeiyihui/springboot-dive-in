@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.1.RELEASE</version>
+		<!--从远程仓库获取parent-->
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>com.xfyh.springboot</groupId>
+	<artifactId>dive-in</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>dive-in</name>
+	<description>Demo project for Spring Boot</description>
+
+	<modules>
+		<module>autoconfigure</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!--希望做到每个子module保持相应的独立性，所以把module共同的依赖以及build插件放到各个module下的pom文件中-->
+
+</project>
