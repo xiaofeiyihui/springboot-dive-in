@@ -1,0 +1,15 @@
+# Initializers  context初始化
+org.springframework.context.ApplicationContextInitializer=\
+com.xfyh.springboot.springapplication.prepare.context.HelloWorldApplicationContextInitializer,\
+com.xfyh.springboot.springapplication.prepare.context.AfterHelloWorldApplicationContextInitializer
+
+
+# Application Listeners 监听
+org.springframework.context.ApplicationListener=\
+com.xfyh.springboot.springapplication.prepare.listener.HelloWorldApplicationListener,\
+com.xfyh.springboot.springapplication.prepare.listener.AfterHelloWorldApplicationListener,\
+com.xfyh.springboot.springapplication.prepare.listener.BeforeConfigFileApplicationListener
+
+# SpringApplicationRunListener
+org.springframework.boot.SpringApplicationRunListener=\
+com.xfyh.springboot.springapplication.run.HelloWorldRunListener

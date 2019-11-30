@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  * @Description:
- * @Auther: lxf
+ * @Auther: xfyh
  * @Date: 2019/11/29 14:09
  */
 @SpringBootApplication
@@ -46,6 +46,11 @@ public class CustomApplication {
         // source可以是 a class name, package name, or an XML resource location
         springApplication.setSources(sources);
         springApplication.run(args);
+
+        /**
+         * 小结：不关哪种方式都会走到 {@link SpringApplication#run(String...)}方法
+         */
+
 
     }
 
